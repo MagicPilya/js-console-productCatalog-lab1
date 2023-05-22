@@ -1,3 +1,35 @@
 * {
   font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  width: 1140px;
+  height: 99vh;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lab1 {
+  &__header {
+    position: absolute;
+    top: 5%;
+    font-size: 30px;
+    text-align: center;
+  }
+  &__information {
+    height: 65%;
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+  }
 }
