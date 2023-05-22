@@ -9,7 +9,14 @@ html(lang="ru")
     .container
         h1.lab1__header Вариант 10 – Каталог товаров. Владимир Кулешов – 22ПОИТ1з
         .lab1__information
-        .lab1__filterSort
-            .lab1__filterSort-filter Фильтровать!
-            .lab1__filterSort-sort Сортировать!
-
+        .lab1__filter-wrapper
+            select#filter(name="select-filter")
+                option(value="По категории 'Промтовары'")
+                option(value="Товары стоимостью выше 100")  
+            #filter-btn Фильтровать!
+        .lab1__sort-wrapper
+            select#sort(name="select-sort")
+                option(value="Сортировка выбором")
+                option(value="Сортировка слиянием")  
+            #sort-btn Сортировать!
+            #reset-btn Сброс!
