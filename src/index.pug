@@ -1,9 +1,24 @@
 doctype html
-html(lang="en")
+html(lang="ru")
     head
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Catalog
+        title Lab1
     body
-    h1 Вариант 10 – каталог товаров. Владимир Кулешов
+    .container
+        h1.lab1__header Вариант 10 – Каталог товаров. Владимир Кулешов – 22ПОИТ1з
+        .lab1__information
+        .lab1__downtown
+            .lab1__downtown-wrapper
+                select#filter(name="select-filter")
+                    option(value="По категории 'Промтовары'") По категории 'Промтовары'
+                    option(value="Товары стоимостью выше 100") Товары стоимостью выше 5
+                button#filter-btn.lab1__button Фильтровать!
+            .lab1__downtown-wrapper
+                select#sort(name="select-sort")
+                    option(value="Сортировка выбором") По убыванию количества товара на складе
+                    option(value="Сортировка слиянием")  По возрастанию категории товара
+                button#sort-btn.lab1__button Сортировать!
+            .lab1__downtown-wrapper
+                button#reset-btn.lab1__button Сброс!
